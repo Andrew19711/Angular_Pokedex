@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+  
+        </div>
+        <div class="col">
+            <div class="card">
+                <div id="texto" class="card-header text-center font-weight-bold ">
+                    Registrate
+                </div>
+                    
+                        <div class="d-flex jutify-content-center text-center">
+  
+                            <form class="p-5 bg-light" method="POST">
+                                <div class="form-group">
+                                    <label for="usuario">Usuario:</label>
+                                    <br/>
+                                    <div class="input-group mb-3">
+  
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"></span>
+                                        </div>
+                                        <input type="text" class="form-control" required placeholder="Nombre usuario" aria-label="Username" name="registroUsuario" aria-describedby="basic-addon1" id="nombre">
+                                    </div>
+  
+                                </div>
+  
+                                <div class="form-group">
+                                    <label for="pwd">Contraseña:</label>
+                                    <br/>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"></span>				
+                                        </div>
+                                        <input type="password" class="form-control" required placeholder="Contraseña Usuario" id="pwd" name="registroPassword">	
+                                        <input type="hidden" name="idUsuario" value="">
+                                    </div>
+                                </div>
+                                <br/>
+                                <button type="submit" class="btn btn-info text-white" (click)="Registro()">Registrar</button>
+                                <br/>
+                                <br/>
+                                <div id="advertencia"></div>
+                                <br/>
+                                <a href="#">Regresar</a>
+                            </form>
+                        </div>
+            </div>
+        </div>
+        <div class="col">
+  
+        </div>
+    </div>
+  </div>

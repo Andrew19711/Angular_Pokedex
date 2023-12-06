@@ -1,0 +1,111 @@
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 60px;
+  }
+  #datos{
+      height: 600px;
+      width: 90vw;
+      background-color: #FFD924;
+      display: grid;
+      grid-template-rows: 1fr 3fr 3fr;
+      .area:first-child {
+          flex-grow: 1;
+          background-color: #FFD924;
+          
+          background-size: 20px 20px;
+        }
+        .area {
+          font-size: larger;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 100%;
+          padding-right: 20px;
+          padding-left: 60%;
+          background-color: #ffffff;
+          background-size: 20px 20px;
+        }
+        p{
+          margin: 10px 10px;
+        }
+        .area:last-child {
+          background: repeating-linear-gradient(
+            0deg,
+            #FFD924,
+            #FFD924 2px,
+            #FFD924 2px,
+            #FFD927 4px,
+          );
+  }
+  }
+  
+  #descripcionContainer{
+    background-color: #FFD924;
+      background-color: rgba(0, 0, 0, 0.151);
+      height: 80%;
+      margin: 5px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.75);
+    &:first-child{
+      border-radius: 0 8px 8px 0;
+    }
+    &:last-child{
+      border-radius: 8px 0 0 8px;
+    }
+  
+  }
+  
+  .etiqueta{
+    display: inline-block;
+    background: #BA8B02;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #181818, #BA8B02);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #181818, #BA8B02); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: x-large;
+    width: 100px;
+    text-align: center; 
+  }
+  
+  .tipo{
+    background-color: #ff002b;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 20px;
+    margin-left: 5px;
+  }
+  
+  button{
+    background-color:  #FFD924;
+    border-radius: 5px;
+    border: unset;
+    cursor: pointer;
+    img{
+      height: 50px;
+      transition: 0.5s;
+      transition-timing-function: ease-in-out;
+      &.girar{
+        rotate: 180deg;
+      }
+      .girar:hover{
+        scale: 1.1;
+      }
+    }
+  }
+
+  #backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.342);
+    z-index: -1;
+    opacity: 1;
+    &.escondido{
+        pointer-events: none;
+        opacity: 0;
+    }
+  }

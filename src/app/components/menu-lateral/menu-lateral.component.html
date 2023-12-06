@@ -1,0 +1,8 @@
+<div id="container" [ngClass]="{seleccionado: seleccionado}">
+    <div id="menu" (click)="selected.emit(id)"  [ngClass]="{seleccionado: seleccionado}">
+        <div id="circulo"></div>
+        <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/{{id}}.png' alt="">
+        <span>No. {{id}}</span>
+        <span *ngIf="data">{{data.name | titlecase}}</span>
+    </div>
+</div>

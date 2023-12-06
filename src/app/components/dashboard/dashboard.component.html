@@ -1,0 +1,13 @@
+<app-header></app-header>
+<br>
+<h1 class="text-center font-weight-bold ">Bienvenido entrenador {{nameStart()}}</h1>
+<main id="container" class="seleccionado">
+    <app-detalles  [pokemon]="pokeselect" (clicked)="detalleAbierto()" [abierto]="detalle" [ngClass]="{abierto: detalle}"></app-detalles>
+<app-photo-pok
+ [pokemon]="pokeselect" [ngClass]="{abierto: detalle}"></app-photo-pok>
+<div id="menuLateral"#tarjetas (scroll)="onScroll($event)">
+    <app-menu-lateral *ngFor="let pokemon of listaPokemon"
+    [data]="pokemon" [seleccionado]="pokemon.name === pokeselect?.name" (selected)="menuclick($event)"></app-menu-lateral>
+    <img src="../../../assets/img/spinner.svg" alt="Loading" id="spinner" *ngIf="loading">
+</div>
+</main> 

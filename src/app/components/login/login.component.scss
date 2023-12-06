@@ -1,0 +1,107 @@
+/* Estilos CSS para el formulario */
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-header {
+    background-color: #ff002b;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+  }
+
+input[type=submit] {
+    background-color: #ff002b;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Estilos CSS para el resto del contenido */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.card-header {
+    font-weight: bold;
+    background-color: #ff002b;
+    color: white;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para el botón de ingreso */
+.ingreso-btn {
+    background-color:#ff002b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+
+  button a {
+    text-decoration: none;
+    color: white;
+  }
+
+  
+  
+  .btn-primary {
+    background-color: #ff002b;
+  }
+  
+  .btn-primary :hover {
+    background-color: #b33e3e;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ff002b;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

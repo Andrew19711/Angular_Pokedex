@@ -1,0 +1,66 @@
+.cerrar-sesion {
+    background-color: #ff002b; 
+    border-radius: 8px;
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    padding: 10px 20px; 
+    border: none; 
+    font-size: 15px;
+}
+  
+  
+  .cerrar-sesion:hover {
+    background-color: darkred; 
+    cursor: pointer; 
+  }
+
+  mat-toolbar{
+    background-color: #ffffff;
+  }
+  img{
+    width: 50px;
+    height: 50px;
+  }
+
+  img:hover{
+    cursor: pointer;
+  }
+
+  .custom-modal {
+    /* Estilos generales del modal */
+    font-family: Arial, sans-serif;
+    /* Ajustes de fuente, puedes cambiar la fuente según tu preferencia */
+  
+    /* Fondo y bordes del modal */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-modal .modal-header {
+    /* Estilos para el encabezado del modal */
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .custom-modal .modal-body {
+    /* Estilos para el cuerpo del modal */
+    padding: 15px;
+  }
+  
+  .custom-modal .modal-footer {
+    /* Estilos para el pie de página del modal */
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+
+  .custom-modal .modal-footer .btn {
+    margin-right: 5px;
+  }
